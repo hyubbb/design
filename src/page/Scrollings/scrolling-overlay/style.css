@@ -1,0 +1,49 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow: hidden;
+}
+
+.container {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: black;
+  z-index: 10;
+  transition: height 0.3s ease-out;
+}
+
+.overlay.down {
+  top: unset;
+  bottom: 0;
+}
+
+.overlay.up {
+  top: 0;
+}
+
+.overlay.blind {
+  height: 100vh;
+}
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 700;
+}
