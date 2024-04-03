@@ -5,10 +5,12 @@ export const Section = styled.section`
   border: 1px dotted white;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
   ul {
     display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    /* transition: all 0.3s ease; */
+    /* overflow-x: scroll; */
+    /* scroll-snap-type: x mandatory; */
     &::-webkit-scrollbar {
       display: none;
     }
@@ -22,8 +24,8 @@ export const Section = styled.section`
       border: 1px solid white;
       border-radius: 20px;
       box-sizing: border-box;
-      scroll-snap-stop: always;
-      scroll-snap-align: center;
+      /* scroll-snap-stop: always; */
+      /* scroll-snap-align: center; */
     }
   }
 
